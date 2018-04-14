@@ -1,6 +1,6 @@
 # lillaqa
 
-Repository for Lilla Kovács, codegirlz, accenture
+Repository of Lilla Kovács. Related to the codegirlz & accenture course.
 
 ## Repsitory structure
 
