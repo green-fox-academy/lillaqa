@@ -12,6 +12,11 @@ body {
     background-color: #000;
 }
 
+.icon {
+    position: absolute;
+    left: 130px;
+}
+
 .textcontainer {
     top: 50px;
     margin-top: 30px;
