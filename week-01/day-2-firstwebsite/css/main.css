@@ -1,15 +1,24 @@
-#header {
-    width: auto;
+.textcontainer {
+    left: 150px;
+    top: 50px;
+    margin-top: 30px;
+    max-width: 800px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-
-#content
-    
 
 .text {
-    font-size: 12px;
-
+    font-size: 16px;
+    font-family: 'Lato';
 }
 
-.header {
-    font-size: 20px;
+.title {
+    font-size: 36px;
 }
+
+.subtitle {
+    font-size: 22px;
+    color: #ff0099;
+    font-style: bold;
+}
+
