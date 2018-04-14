@@ -10,6 +10,7 @@ body {
     height: 50px;
     width: auto;
     background-color: #000;
+    text-align: right;
 }
 
 .icon {
