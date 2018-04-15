@@ -51,14 +51,12 @@ body {
 
 .subtitle {
     font-size: 22px;
-    font-style: bold;
     font-family: 'Merriweather', serif;
 }
 
 .subtitle-role {
     font-size: 24px;
     color: #ff0099;
-    font-style: bold;
 }
 
 .title-centered {
