@@ -1,4 +1,4 @@
-public class replace {
+public class Replace {
 
     public static void main(String[] args){
         String original = "In a dishwasher far far away";
