@@ -19,9 +19,10 @@ body {
     padding-top: 17px;
 }
 
-.icon {
+.logo {
     position: absolute;
     left: 10%;
+    top: 9px;
 }
 
 .textcontainer {
