@@ -1,4 +1,4 @@
-package main.controlflow;
+package ControlFlow;
 
 import java.util.Scanner;
 
@@ -9,17 +9,16 @@ public class AvgOfInput {
 
         Scanner scanner = new Scanner(System.in);
 
-        int[] array = new int[5];
+        int numbers = 5;
         int sum = 0;
 
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < numbers; i++){
             System.out.println("Number " + (i+1) + " :");
-            array[i] = scanner.nextInt();
-
-            sum +=array[i];
+            sum += scanner.nextInt();
         }
+        scanner.close();
 
-        int avg = sum / (array.length);
+        int avg = sum / numbers;
 
         System.out.println("The sum is: " + sum + " , the average is: " + avg);
     }
