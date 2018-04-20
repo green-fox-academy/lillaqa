@@ -41,7 +41,7 @@ public class FourRectagles {
         graphics.drawLine(130,130,130,80);
         graphics.drawLine(130,80,80,80);
 
-        graphics.setColor(Color.DARK_GRAY);
+        graphics.setColor(new Color(50,153,98));
         graphics.fillRoundRect(180,180,65,65,13,13);
 
     }
