@@ -1,4 +1,4 @@
-public class urlFixer {
+public class UrlFixer {
 
     public static void main(String[] args){
 

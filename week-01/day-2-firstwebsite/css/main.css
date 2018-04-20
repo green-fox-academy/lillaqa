@@ -13,15 +13,16 @@ body {
     text-align: right;
 }
 
-.pagerheadertexts {
+.navigation {
     margin-right: 10%;
     margin-left: 35%;
     padding-top: 17px;
 }
 
-.icon {
+.logo {
     position: absolute;
     left: 10%;
+    top: 9px;
 }
 
 .textcontainer {
