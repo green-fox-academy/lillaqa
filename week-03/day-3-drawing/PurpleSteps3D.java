@@ -29,13 +29,22 @@ public class PurpleSteps3D {
 
     public static void mainDraw(Graphics graphics){
 
-        graphics.setColor(Color.MAGENTA); //double check color...
+
+        graphics.setColor(new Color(177, 69, 243));
         graphics.fillRect(0,0,15,15);
         graphics.fillRect(15,15,25,25);
         graphics.fillRect(40,40,35,35);
         graphics.fillRect(75,75,45,45);
         graphics.fillRect(120,120,55,55);
         graphics.fillRect(175,175,70,70);
+
+        graphics.setColor(Color.BLACK);
+        graphics.drawRect(0,0,15,15);
+        graphics.drawRect(15,15,25,25);
+        graphics.drawRect(40,40,35,35);
+        graphics.drawRect(75,75,45,45);
+        graphics.drawRect(120,120,55,55);
+        graphics.drawRect(175,175,70,70);
     }
 
 }
