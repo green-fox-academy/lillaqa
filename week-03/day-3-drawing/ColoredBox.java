@@ -14,7 +14,7 @@ public class ColoredBox {
         JFrame jFrame = new JFrame("Drawing");
         jFrame.setSize(new Dimension(WIDTH, HEIGHT));
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        jFrame.add(new Example.ImagePanel());
+        jFrame.add(new ImagePanel());
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
     }
@@ -31,9 +31,9 @@ public class ColoredBox {
         // Draw a box that has different colored lines on each edge.
 
         graphics.setColor(Color.RED);
-        graphics.drawLine(50,50,100,100);
+        graphics.drawLine(50,50,50,100);
         graphics.setColor(Color.BLUE);
-        graphics.drawLine(100,100,200,100);
+        graphics.drawLine(50,100,200,100);
         graphics.setColor(Color.GREEN);
         graphics.drawLine(200,100,200,50);
         graphics.setColor(Color.BLACK);

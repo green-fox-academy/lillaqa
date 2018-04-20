@@ -16,7 +16,7 @@ public class MiddleLines {
         JFrame jFrame = new JFrame("Drawing");
         jFrame.setSize(new Dimension(WIDTH, HEIGHT));
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        jFrame.add(new Example.ImagePanel());
+        jFrame.add(new ImagePanel());
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
     }
@@ -25,19 +25,20 @@ public class MiddleLines {
         @Override
         protected void paintComponent(Graphics graphics) {
             super.paintComponent(graphics);
-            mainLine(graphics);
+            mainDraw(graphics);
         }
     }
 
-    public static void mainLine(Graphics graphics){
+    public static void mainDraw(Graphics graphics){
         // draw a red horizontal line to the canvas' middle.
         // draw a green vertical line to the canvas' middle.
 
-
-        graphics.drawLine(1,1,1,160);
         graphics.setColor(Color.RED);
-        graphics.drawLine(1,1,150,160);
+        graphics.drawLine(1,1,1,160);
+
         graphics.setColor(Color.GREEN);
+        graphics.drawLine(1,1,150,160);
+
 
     }
 }
