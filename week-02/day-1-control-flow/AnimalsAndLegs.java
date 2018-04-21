@@ -1,19 +1,18 @@
-package main.controlflow;
+package ControlFlow;
 
 import java.util.Scanner;
 
 public class AnimalsAndLegs {
     public static void main(String[] args){
 
-        Scanner scannerChick = new Scanner(System.in);
-        Scanner scannerPig = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter the number of chickens:");
-        int chickenCount = scannerChick.nextInt();
+        int chickenCount = scanner.nextInt();
 
         System.out.println("Please enter the number of pigs:");
-        int pigCount = scannerPig.nextInt();
-        scannerPig.close();
+        int pigCount = scanner.nextInt();
+        scanner.close();
 
         int legsCount = chickenCount * 2 + pigCount * 4;
 
