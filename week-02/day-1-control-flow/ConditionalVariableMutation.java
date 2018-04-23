@@ -2,11 +2,11 @@ package ControlFlow;
 
 public class ConditionalVariableMutation {
 
-    public static void  main(String[] args){
+    public static void  main(String[] args) {
 
         double a = 24;
         int out = 0;
-        if (a % 2 == 0){
+        if (a % 2 == 0) {
             out = out + 1;
         }
 
@@ -22,10 +22,10 @@ public class ConditionalVariableMutation {
         if (10 <= b && b <= 20) {
             out2 = "Sweet";
         }
-        else if(b < 10){
+        else if(b < 10) {
             out2 = "Less!";
         }
-        else if(b > 20){
+        else if(b > 20) {
             out2 = "More!";
         }
 
@@ -49,7 +49,7 @@ public class ConditionalVariableMutation {
         else if((creditsCheck = false) && (isBonus = false)) {
             c -= 1;
         }
-        else if(isBonus = true){
+        else if(isBonus = true) {
             c--;
         }
 
@@ -63,10 +63,10 @@ public class ConditionalVariableMutation {
         String out3 = "";
 
 
-        if(d % 4 == 0 && time < 200){
+        if(d % 4 == 0 && time < 200) {
             out3 = "check";
         }
-        else if(time > 200){
+        else if(time > 200) {
             out3 = "Time out";
         }
         else {

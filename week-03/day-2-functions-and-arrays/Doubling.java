@@ -9,7 +9,7 @@ public class Doubling {
 
     }
 
-    static int doubling(int num){
+    static int doubling(int num) {
 
         num = num*2;
         return num;

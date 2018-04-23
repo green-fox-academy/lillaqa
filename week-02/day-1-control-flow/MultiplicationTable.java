@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MultiplicationTable {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Multiple this:");

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PrintBigger {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class PrintBigger {
         int secondNum = scanner.nextInt();
         scanner.close();
 
-        if(firstNum > secondNum){
+        if(firstNum > secondNum) {
             System.out.println(firstNum + " has higher value");
         }
 

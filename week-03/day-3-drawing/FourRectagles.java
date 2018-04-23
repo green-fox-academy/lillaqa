@@ -27,7 +27,7 @@ public class FourRectagles {
         }
     }
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
 
         graphics.setColor(Color.GREEN);
         graphics.fillRect(15,15,25,25);

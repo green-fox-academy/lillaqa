@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CountFromTo {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -14,12 +14,12 @@ public class CountFromTo {
         scanner.close();
 
 
-        if(number1 > number2){
+        if(number1 > number2) {
             System.out.println("The second number should be bigger");
         }
         else{
 
-            for (int i = number1; i < number2; i++){
+            for (int i = number1; i < number2; i++) {
                 System.out.println(i);
             }
         }

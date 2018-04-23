@@ -2,7 +2,7 @@ package ControlFlow;
 
 public class TwoNumbers {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int number1 = 22;
         int number2 = 13;
         double number3 = 13;

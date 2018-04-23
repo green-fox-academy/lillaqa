@@ -29,7 +29,7 @@ public class MiddleLines {
         }
     }
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
 
         graphics.setColor(Color.RED);
         graphics.drawLine(1,1,1,160);

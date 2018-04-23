@@ -2,7 +2,7 @@ package ControlFlow;
 
 public class VariableMutation {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int a = 3;
         a = a +10;

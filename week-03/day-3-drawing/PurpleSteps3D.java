@@ -27,7 +27,7 @@ public class PurpleSteps3D {
         }
     }
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
 
 
         graphics.setColor(new Color(177, 69, 243));

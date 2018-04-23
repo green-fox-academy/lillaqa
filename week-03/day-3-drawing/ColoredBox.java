@@ -27,7 +27,7 @@ public class ColoredBox {
         }
     }
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
 
         graphics.setColor(Color.RED);
         graphics.drawLine(50,50,50,100);

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class OneTwoALot {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number");
@@ -12,13 +12,13 @@ public class OneTwoALot {
         scanner.close();
 
 
-        if(input <= 0){
+        if(input <= 0) {
             System.out.println("Not enough");
         }
-        else if(input == 1){
+        else if(input == 1) {
             System.out.println("One");
         }
-        else if(input == 2){
+        else if(input == 2) {
             System.out.println("Two");
         }
         else{

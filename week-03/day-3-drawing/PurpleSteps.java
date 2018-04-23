@@ -29,7 +29,7 @@ public class PurpleSteps {
         }
     }
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
 
         graphics.setColor(new Color(177, 69, 243));
         graphics.fillRect(0,0,10,10);
