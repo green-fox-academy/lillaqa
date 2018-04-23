@@ -16,6 +16,3 @@ public class SecondsInADay{
     }
 
 }
-
-// Write a program that prints the remaining seconds (as an integer) from a
-// day if the current time is represented by the variables

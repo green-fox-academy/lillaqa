@@ -3,7 +3,6 @@ package ControlFlow;
 public class HumptyDumpty {
 
     public static void main(String[] args) {
-        // Modify this program to print Humpty Dumpty riddle correctly
 
         System.out.println("Humpty Dumpty sat on a wall,");
         System.out.println("Humpty Dumpty had a great fall.");

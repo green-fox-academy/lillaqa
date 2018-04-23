@@ -28,7 +28,6 @@ public class ColoredBox {
     }
 
     public static void mainDraw(Graphics graphics){
-        // Draw a box that has different colored lines on each edge.
 
         graphics.setColor(Color.RED);
         graphics.drawLine(50,50,50,100);
