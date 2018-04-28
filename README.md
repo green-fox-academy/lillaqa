@@ -8,8 +8,7 @@ Tasks are organized accornidng to the school schedule, each week will have a fol
 
 In case it is possible all notes to projects has to be written in a separate readme file. 
 
-## Wroking repository
-https://github.com/lillaqa/greenfox-java-v2/
+
 
  
 
