@@ -10,12 +10,14 @@ public class QuoteSwap {
         ArrayList<String> list = new ArrayList<String>(Arrays.asList("What", "I", "do", "create,", "I", "cannot", "not", "understand."));
 
         System.out.println(quoteSwap(list));
-        // Expected output: "What I cannot create I do not understand."
     }
 
-    public static ArrayList quoteSwap(ArrayList list) {
+    public static String quoteSwap(ArrayList list) {
         list.set(3, "create");
         list.set(2, list.set(5, list.get(2)));
-        return list;
+
+        String quote = list.toString();
+        quote = quote.replace(",", "").replace("[", "").replace("]", "");
+        return quote;
     }
 }
