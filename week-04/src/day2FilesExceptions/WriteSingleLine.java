@@ -17,7 +17,7 @@ public class WriteSingleLine {
             Files.write(myFile, Collections.singleton(myName));
 
         } catch (IOException e) {
-            System.out.println("Unable to write file: my-file.txt");
+            System.out.println("Unable to write file: lilla-file.txt");
         }
 
     }
