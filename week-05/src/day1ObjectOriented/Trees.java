@@ -2,19 +2,15 @@ package day1ObjectOriented;
 
 public class Trees {
 
-    String type;
+    String treeType;
     String leafColor;
-    int age;
-    boolean sex;
+    int treeAge;
+    String treeSex;
 
-    public static void main(String[] args) {
-        Trees oak = new Trees();
-        Trees birch = new Trees();
-        Trees cherry = new Trees();
-        Trees elm = new Trees();
-        Trees hickory = new Trees();
+    void printTreeType() {
+        System.out.println(treeType + " " + treeAge + " " + leafColor + " " + treeSex);
     }
 
-    
-
 }
+
+
