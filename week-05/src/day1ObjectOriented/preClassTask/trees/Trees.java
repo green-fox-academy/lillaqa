@@ -1,4 +1,4 @@
-package day1ObjectOriented;
+package day1ObjectOriented.preClassTask.trees;
 
 public class Trees {
 
