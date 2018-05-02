@@ -38,5 +38,8 @@ public class Forest {
         oak.leafColor = "green";
         oak.treeSex = "single sex tree";
         oak.printTreeType();
+
+        Trees newTree = new Trees("New", 23, "brown", "male");
+        newTree.printTreeType();
     }
 }

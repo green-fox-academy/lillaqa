@@ -7,6 +7,17 @@ public class Trees {
     int treeAge;
     String treeSex;
 
+    public Trees() {
+
+    }
+
+    public Trees(String treeType, int treeAge, String leafColor, String treeSex) {
+        this.treeType = treeType;
+        this.leafColor = leafColor;
+        this.treeAge = treeAge;
+        this.treeSex = treeSex;
+    }
+
     void printTreeType() {
         System.out.println(treeType + " " + treeAge + " " + leafColor + " " + treeSex);
     }
