@@ -11,13 +11,3 @@ public class Students {
         teacher.answer();
     }
 }
-
-
-/*
-Student
-learn()
-question(teacher) -> calls the teachers answer method
-Teacher
-teach(student) -> calls the students learn method
-answer()
- */
