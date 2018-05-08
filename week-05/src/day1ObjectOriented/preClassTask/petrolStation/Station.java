@@ -15,10 +15,3 @@ public class Station extends Cars {
     }
 }
 
-/*
-refill(car) -> decreases the gasAmount by the capacity of the car and increases the cars gasAmount
-if (this.gasAmount > (car.capacity - car.gasAmount)) {
-            this.gasAmount -= car.capacity - car.gasAmount;
-            car.gasAmount = car.capacity;
-        }
- */
