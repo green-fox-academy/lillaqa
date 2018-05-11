@@ -23,7 +23,7 @@ public class Person {
     }
 
     void introduce() {
-        System.out.println("Hi, I'm " + name + " a " + age + " year old " + gender);
+        System.out.print("Hi, I'm " + name + " a " + age + " year old " + gender);
 
     }
 
