@@ -33,22 +33,23 @@ public class Extension {
         }
         return medianN;
     }
-    // TODO this is still missing
+
     public boolean isVowel(char c) {
-        return Arrays.asList('a', 'u', 'o', 'e', 'i').contains(c);
+        return Arrays.asList('a', 'á', 'u', 'ú', 'ü', 'ű', 'ö', 'ó', 'ő', 'o', 'e', 'é', 'i', 'í').contains(c);
     }
-    // TODO the mistake it has to have different vowels, vowels can't be the last character
+
     public String translate(String hungarian) {
-        String teve = hungarian;
+        StringBuilder teve = new StringBuilder(hungarian);
         int length = teve.length();
         for (int i = 0; i < length; i++) {
             char c = teve.charAt(i);
             if (isVowel(c)) {
-                teve = String.join(c + "v" + c, teve.split(""+c));
+                teve.insert(i, 'v');
+                teve.insert(i, c);
                 i+=2;
                 length+=2;
             }
         }
-        return teve;
+        return teve.toString();
     }
 }
