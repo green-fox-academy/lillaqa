@@ -11,23 +11,22 @@ public class Board extends JComponent implements KeyListener {
     int testBoxY;
 
     public Board() {
-        testBoxX = 72;
-        testBoxY = 72;
+        testBoxX = 50;
+        testBoxY = 50;
 
-        setPreferredSize(new Dimension(720, 720));
+        setPreferredSize(new Dimension(500, 500));
         setVisible(true);
     }
 
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
-        graphics.fillRect(testBoxX, testBoxY, 72, 72);
-        //PositionedImage image = new PositionedImage("images/floor.png", 300, 300); //TODO make this useable
-        //image.draw(graphics); //TODO make this useable
+        graphics.fillRect(testBoxX, testBoxY, 50, 50);
+        PositionedImage image = new PositionedImage("images/floor.png", 0, 0);
+        image.draw(graphics);
     }
 
     public static void main(String[] args) {
-        // Here is how you set up a new window and adding our board to it
         JFrame frame = new JFrame("RPG Game");
         Board board = new Board();
         frame.add(board);
@@ -50,13 +49,13 @@ public class Board extends JComponent implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_UP) {
-            testBoxY -= 72;
+            testBoxY -= 50;
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-            testBoxY += 72;
+            testBoxY += 50;
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            testBoxX += 72;
+            testBoxX += 50;
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-            testBoxX -= 72;
+            testBoxX -= 50;
         }
 
         repaint();
