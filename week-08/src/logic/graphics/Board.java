@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Board extends JComponent implements KeyListener {
 
@@ -21,9 +25,11 @@ public class Board extends JComponent implements KeyListener {
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
-        graphics.fillRect(testBoxX, testBoxY, 50, 50);
-        PositionedImage image = new PositionedImage("images/floor.png", 0, 0);
+        MapReading map = new MapReading("maps/map1.txt", graphics);
+        //graphics.fillRect(testBoxX, testBoxY, 50, 50);
+        PositionedImage image = new PositionedImage("images/hero-down.png", 0, 0);
         image.draw(graphics);
+
     }
 
     public static void main(String[] args) {
