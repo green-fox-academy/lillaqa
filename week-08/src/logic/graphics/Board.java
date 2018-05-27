@@ -21,6 +21,7 @@ public class Board extends JComponent implements KeyListener {
     int heroPosY;
     AddCharacters loadCharacters;
     boolean canMoveToNextTile = true;
+    String heroImage = "images/hero-down.png";
 
     public Board() {
         loadCharacters = new AddCharacters();
@@ -35,7 +36,7 @@ public class Board extends JComponent implements KeyListener {
     public void paint(Graphics graphics) {
         super.paint(graphics);
         MapReading map = new MapReading("maps/map1.txt", graphics);
-        PositionedImage hero = new PositionedImage("images/hero-down.png", heroPosX, heroPosY);
+        PositionedImage hero = new PositionedImage(heroImage, heroPosX, heroPosY);
         hero.draw(graphics);
 
     }
@@ -64,15 +65,16 @@ public class Board extends JComponent implements KeyListener {
     public void keyReleased(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_UP) {
             heroPosY -= 50;
+            heroImage = "images/hero-up.png";
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
             heroPosY += 50;
+            heroImage = "images/hero-down.png";
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
             heroPosX += 50;
+            heroImage = "images/hero-right.png";
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
             heroPosX -= 50;
-        }
-        if(canMoveToNextTile) {
-
+            heroImage = "images/hero-left.png";
         }
 
         repaint();
