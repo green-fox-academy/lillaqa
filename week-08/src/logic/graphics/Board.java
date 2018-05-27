@@ -1,5 +1,8 @@
 package logic.graphics;
 
+import logic.characters.Characters;
+import logic.logic.AddCharacters;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -8,19 +11,22 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Board extends JComponent implements KeyListener {
 
     int testBoxX;
     int testBoxY;
+    AddCharacters loadCharacters;
 
     public Board() {
+        loadCharacters = new AddCharacters();
         testBoxX = 50;
         testBoxY = 50;
-
         setPreferredSize(new Dimension(500, 500));
         setVisible(true);
     }
+
 
     @Override
     public void paint(Graphics graphics) {
