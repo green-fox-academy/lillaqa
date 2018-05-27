@@ -10,7 +10,6 @@ import java.nio.file.Paths;
 
 public class Hero extends Characters {
     PositionedImage heroImage;
-    private Object graphics;
 
     public Hero() {
         this.maxHp = 20 + 3 * randomD6(1, 6);
@@ -21,8 +20,5 @@ public class Hero extends Characters {
 
     }
 
-    public void getHeroImage() {
-        heroImage.draw((Graphics) graphics);
-    }
 }
 
