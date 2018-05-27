@@ -17,10 +17,9 @@ import java.util.ArrayList;
 
 public class Board extends JComponent implements KeyListener {
 
+    AddCharacters loadCharacters;
     int heroPosX;
     int heroPosY;
-    AddCharacters loadCharacters;
-    boolean canMoveToNextTile = true;
     String heroImage = "images/hero-down.png";
 
     public Board() {
@@ -66,16 +65,29 @@ public class Board extends JComponent implements KeyListener {
         if (e.getKeyCode() == KeyEvent.VK_UP) {
             heroPosY -= 50;
             heroImage = "images/hero-up.png";
+            if (heroPosY < 0) {
+                heroPosY += 50;
+            }
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
             heroPosY += 50;
             heroImage = "images/hero-down.png";
+            if (heroPosY >= 500) {
+                heroPosY -= 50;
+            }
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
             heroPosX += 50;
             heroImage = "images/hero-right.png";
+            if (heroPosX >= 500) {
+                heroPosX -= 50;
+            }
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
             heroPosX -= 50;
             heroImage = "images/hero-left.png";
+            if (heroPosX < 0) {
+                heroPosX += 50;
+            }
         }
+
 
         repaint();
     }
