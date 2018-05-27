@@ -19,6 +19,7 @@ public class AddCharacters {
         loadCharacters.add(hero);
         Boss boss = new Boss();
         loadCharacters.add(boss);
+        createMonster(monsterNumber);
 
     }
 
