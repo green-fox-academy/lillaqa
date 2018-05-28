@@ -10,9 +10,10 @@ import java.util.List;
 
 public class MapReading {
 
-    int boardSize = 10;
-    int [][] boardDimensions = new int[boardSize][boardSize];
+    public int boardSize = 10;
+    public int [][] boardDimensions = new int[boardSize][boardSize];
     String mapName;
+    public int moveForward;
 
     public MapReading(String mapName, Graphics graphics) {
         boardCreation(mapName);
@@ -51,5 +52,16 @@ public class MapReading {
         }
     }
 
+    public void setCanMoveForward () {
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                if (boardDimensions[i][j] != 0) {
+                    moveForward = 1;
+                } else {
+                    moveForward = 0;
+                }
+            }
+        }
+    }
 }
 
