@@ -8,5 +8,6 @@ public class Monster extends Characters {
         this.maxHp = 2 * level * randomD6(1, 6);
         this.dp = level / 2 * randomD6(1, 6);
         this.sp = level * randomD6(1, 6);
+        this.imagePath = "images/skeleton.png";
     }
 }

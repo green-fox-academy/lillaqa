@@ -12,8 +12,7 @@ import java.util.Arrays;
 public class Controller {
     private String name;
 
-    @RequestMapping(method = RequestMethod.GET, value="/greetings")
-    //azért emelte ki márk a getet, mert a request mindenre működik
+    @RequestMapping(method = RequestMethod.GET, value="/listofgreetings")
     public ArrayList<String> getHellos() {
         return new ArrayList<>(
                 Arrays.asList(
