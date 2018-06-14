@@ -5,8 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
+    <div th:style="${color} + ${fontsize}">
+        <p th:text="'Id: ' + ${countCalls} + ' ' + ${hello} + ' ' + ${name} + '!'"></p>
 
-<p th:text="'Id: ' + ${countCalls} + ' ' + ${hello} + ' ' + ${name} + '!'"></p>
+    </div>
+
 </body>
 </html>
 
