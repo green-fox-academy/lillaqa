@@ -9,13 +9,7 @@ public class Dominoes {
 
     public static void main(String[] args) {
         List<Domino> dominoes = initializeDominoes();
-        /*
-        for(int i; i < dominoes.size(); i++) {
-            new Domino(5, 2);
-            getValues, új tömb, ha ennek a második eleme megegyik egy másik első elemével
-
-            megoldás for ciklusok és a getvalues használata
-        }*/
+        
 
         System.out.println(dominoes);
     }
@@ -31,12 +25,4 @@ public class Dominoes {
         return dominoes;
     }
 
-
-
-
 }
-
-
-/*You have the list of Dominoes
-Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides
-eg: [2, 4], [4, 3], [3, 5] ...*/
