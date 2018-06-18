@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank of Simba Accounts</title>
+</head>
+<body>
+    <table style="font-size:22px; width:auto; height:auto; margin: 5px; background-color: darkseagreen">
+        <tr style="background-color: beige; font-style: italic">
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Animal type</th>
+        </tr>
+        <tr th:each="currentAccount : ${accounts}" style="background-color:cornsilk; align:center; font-style: normal; font-size: 16px">
+            <td th:text="${currentAccount.name}"></td>
+            <td th:text="${currentAccount.balance}"></td>
+            <td th:text="${currentAccount.animalType}"></td>
+        </tr>
+    </table>
+</body>
+</html>

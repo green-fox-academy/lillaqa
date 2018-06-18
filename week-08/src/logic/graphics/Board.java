@@ -34,7 +34,7 @@ public class Board extends JComponent implements KeyListener {
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
-        MapReading map = new MapReading("maps/map1.txt", graphics);
+        MapReading map = new MapReading("maps/map2.txt", graphics);
         PositionedImage hero = new PositionedImage(heroImage, heroPosX, heroPosY);
         hero.draw(graphics);
 

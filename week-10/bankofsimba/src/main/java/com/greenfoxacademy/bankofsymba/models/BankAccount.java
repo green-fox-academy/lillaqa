@@ -3,7 +3,7 @@ package com.greenfoxacademy.bankofsymba.models;
 public class BankAccount {
 
     private String name;
-    private int balance;
+    private double balance;
     private String animalType;
 
     public BankAccount() {
@@ -12,7 +12,7 @@ public class BankAccount {
         this.animalType = "Lion";
     }
 
-    public BankAccount(String name, int balance, String animalType) {
+    public BankAccount(String name, double balance, String animalType) {
         this.name = name;
         this.balance = balance;
         this.animalType = animalType;
@@ -22,7 +22,7 @@ public class BankAccount {
         return name;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
