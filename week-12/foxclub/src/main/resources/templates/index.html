@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>fox club</title>
 </head>
 <body>
     <ul>
-        <li><a href="https://example.com">Information</a></li>
+        <li><a th:href="@{http://www.thymeleaf/documentation.html}">Information</a></li>
     </ul>
-    <img src="images/greenfox.png">
+    <img src="/templates/greenfox.png" />
     <p>This is Mr. Fox. Currently living on pizza and lemonade. He knows two tricks.</p>
     <h2>Known tricks</h2>
     <ul>
@@ -16,3 +16,5 @@
     </ul>
 </body>
 </html>
+
+<!--<img th:src="@{/templates/greenfox.png}" > -->
