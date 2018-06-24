@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.thymeleaf.org">
+<html xmlns="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>fox club</title>
 </head>
 <body>
     <ul>
-        <li><a href="http://localhost:8080/login/">Information</a></li>
+        <li><a href="http://localhost:8080/">Information</a></li>
+        <li><a href="http://localhost:8080/nutritionStore">Nutrition Store</a></li>
+        <li><a href="http://localhost:8080/trickCenter">Trick Center</a></li>
     </ul>
     <img src="greenfox.png"  />
-    <p>This is Mr. Fox. Currently living on pizza and cold water. He knows two tricks.</p>
+
+    <p th:text="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and ' + ${drink} + '. He knows ' + ${tricks.size} + ' tricks.' "></p>
+
+    <!-- todo: this should be dynamic too -->
     <h2>Known tricks</h2>
     <ul>
         <li>write HTML</li>
@@ -18,5 +23,3 @@
 </body>
 </html>
 
-
-<!-- TODO nutrition store defines what is he living on, he knows x trick is dynamic what did he learn in trick library -->
