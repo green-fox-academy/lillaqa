@@ -7,7 +7,7 @@
 <body>
     <div>
         <ul>
-            <li><a href="http://localhost:8080/">Information</a></li>
+            <li><a href="http://localhost:8080/info">Information</a></li>
             <li><a href="http://localhost:8080/nutritionStore">Nutrition Store</a></li>
             <li><a href="http://localhost:8080/trickCenter">Trick Center</a></li>
         </ul>
@@ -16,7 +16,8 @@
         <img src="greenfox.png"  />
     </div>
     <div>
-        <p th:text="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and ' + ${drink} + '. He knows ' + ${tricks.size} + ' tricks.' "></p>
+        <p th:text="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and ' + ${drink} "></p>
+        <!-- + '. He knows ' + ${tricks.size} + ' tricks.'  -->
     </div> <!-- todo: this should be dynamic too -->
     <div>
         <h2>Known tricks</h2>
