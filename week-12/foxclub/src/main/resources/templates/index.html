@@ -5,21 +5,27 @@
     <title>fox club</title>
 </head>
 <body>
-    <ul>
-        <li><a href="http://localhost:8080/">Information</a></li>
-        <li><a href="http://localhost:8080/nutritionStore">Nutrition Store</a></li>
-        <li><a href="http://localhost:8080/trickCenter">Trick Center</a></li>
-    </ul>
-    <img src="greenfox.png"  />
+    <div>
+        <ul>
+            <li><a href="http://localhost:8080/">Information</a></li>
+            <li><a href="http://localhost:8080/nutritionStore">Nutrition Store</a></li>
+            <li><a href="http://localhost:8080/trickCenter">Trick Center</a></li>
+        </ul>
+    </div>
+    <div>
+        <img src="greenfox.png"  />
+    </div>
+    <div>
+        <p th:text="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and ' + ${drink} + '. He knows ' + ${tricks.size} + ' tricks.' "></p>
+    </div> <!-- todo: this should be dynamic too -->
+    <div>
+        <h2>Known tricks</h2>
+        <ul>
+            <li>write HTML</li>
+            <li>code in Java</li>
+        </ul>
+    </div>
 
-    <p th:text="'This is ' + ${name} + '. Currently living on ' + ${food} + ' and ' + ${drink} + '. He knows ' + ${tricks.size} + ' tricks.' "></p>
-
-    <!-- todo: this should be dynamic too -->
-    <h2>Known tricks</h2>
-    <ul>
-        <li>write HTML</li>
-        <li>code in Java</li>
-    </ul>
 </body>
 </html>
 
