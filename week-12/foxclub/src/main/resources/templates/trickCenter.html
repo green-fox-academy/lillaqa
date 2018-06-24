@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <ul>
+        <li><a href="http://localhost:8080/">Information</a></li>
+        <li><a href="http://localhost:8080/nutritionStore">Nutrition Store</a></li>
+        <li><a href="http://localhost:8080/trickCenter">Trick Center</a></li>
+    </ul>
+    <form action="/">
+        <label for="tricklist">Tricks:</label>
+        <select id="tricklist" name="tricklist" th:value="${tricks}">
+            <option th:each="trick : ${tricks}" th:value="${trick}" th:text="${trick}"></option>
+        </select>
+        <button>Learn</button>
+    </form>
+
+</body>
+</html>
