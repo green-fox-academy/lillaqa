@@ -7,11 +7,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class MainController {
 
-    @GetMapping("")
-    public String index() {
-        return "index";
-    }
-
 
     @GetMapping("doubling")
     public Doubling doubling(@RequestParam(value = "input", required= true) Integer input) {
