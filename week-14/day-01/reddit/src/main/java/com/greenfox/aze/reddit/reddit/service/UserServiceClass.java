@@ -31,13 +31,3 @@ public class UserServiceClass {
 	}
 
 }
-
-
-/*
-
-
-	public void createNewPost(Posts createdPost) {
-		postRepository.save(createdPost);
-	}
-
- */
