@@ -11,11 +11,19 @@ import java.util.List;
 @RestController
 public class PostController {
 
-	@Autowired
-	PostServiceClass postServiceClass;
 
+	PostServiceClass postServiceClass;
 	@Autowired
+	public void setPostServiceClass(PostServiceClass postServiceClass) {
+		this.postServiceClass = postServiceClass;
+	}
+
+
 	UserServiceClass userServiceClass;
+	@Autowired
+	public void setUserServiceClass(UserServiceClass userServiceClass) {
+		this.userServiceClass = userServiceClass;
+	}
 
 	@PostMapping("")
 	public List<Posts> postNewPost(@RequestBody Posts[] postsToCreate, @RequestHeader("username") String username) {

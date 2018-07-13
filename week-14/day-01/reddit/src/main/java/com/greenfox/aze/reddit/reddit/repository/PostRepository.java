@@ -9,8 +9,8 @@ import java.util.List;
 @Repository
 public interface PostRepository extends CrudRepository<Posts, Long> {
 
-	Posts findById();
+	//Posts findById();
 
-	List<Posts> findAll();
+	//List<Posts> findAll();
 
 }

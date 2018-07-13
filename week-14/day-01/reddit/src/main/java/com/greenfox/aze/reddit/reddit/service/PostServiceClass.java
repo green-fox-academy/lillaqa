@@ -10,11 +10,16 @@ import java.util.List;
 @Service
 public class PostServiceClass {
 
-	@Autowired
+
 	PostRepository postRepository;
 
+	@Autowired
+	public void setPostRepository(PostRepository postRepository) {
+		this.postRepository = postRepository;
+	}
+
 	public List<Posts> getAllPosts() {
-		return postRepository.findAll();
+		return (List<Posts>) postRepository.findAll();
 	}
 
 
