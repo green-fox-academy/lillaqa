@@ -12,3 +12,7 @@ SELECT * FROM movies WHERE director != "John Lasseter";
 SELECT DISTINCT director FROM movies ORDER BY director ASC;
 SELECT title FROM movies ORDER BY year DESC LIMIT 4;
 SELECT title FROM movies ORDER BY title ASC LIMIT 5 OFFSET 6-10;
+SELECT City, Population FROM north_american_cities WHERE Country = "Canada";
+SELECT City FROM north_american_cities WHERE Country = "United States" ORDER BY Latitude DESC;
+SELECT City FROM north_american_cities WHERE Country = "Mexico" ORDER BY Population DESC LIMIT 2;
+SELECT City, Population FROM north_american_cities WHERE Country = "United States" ORDER BY Population DESC LIMIT 2 OFFSET 2;
