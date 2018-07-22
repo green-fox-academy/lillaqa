@@ -6,19 +6,34 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
 @Service
-public class BankAccountService {
+public class BankAccountService implements BankService {
 
-    private ArrayList<BankAccount> bankAccounts = new ArrayList<>();
+	private ArrayList<BankAccount> bankAccounts = new ArrayList<>();
 
-    public ArrayList<BankAccount> getAllBankAccount() {
-        return bankAccounts;
-    }
+	@Override
+	public void add(BankAccount bankAccount) {
+		bankAccounts.add(bankAccount);
+	}
 
-    public void createSimba() {
-        bankAccounts.add(new BankAccount());
-    }
+	@Override
+	public void addSimba(BankAccount simbaAccount) {
+		bankAccounts.add(new BankAccount());
+	}
 
-    public void createZebra() {
-        bankAccounts.add(new BankAccount("Zebra", 2000, "zebra"));
-    }
+	@Override
+	public ArrayList<BankAccount> getAllAccount() {
+		return bankAccounts;
+	}
+
+
+	@Override
+	public void createAccounts() {
+		bankAccounts.add(new BankAccount("Zebra", 2000.0, "zebra"));
+		bankAccounts.add(new BankAccount("Zazu", 1500.0, "red-billed hornbill"));
+		bankAccounts.add(new BankAccount("Mufasa", 3000.0, "lion"));
+		bankAccounts.add(new BankAccount("Nala", 2000.0, "lioness"));
+	}
+
+
 }
+
