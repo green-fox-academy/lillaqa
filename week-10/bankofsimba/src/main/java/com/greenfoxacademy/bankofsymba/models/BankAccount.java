@@ -8,7 +8,7 @@ public class BankAccount {
 
     public BankAccount() {
         this.name = "Simba";
-        this.balance = 2000;
+        this.balance = 2000.0;
         this.animalType = "Lion";
     }
 
