@@ -1,0 +1,14 @@
+https://sqlbolt.com/ online excerises
+
+SELECT Title, Director FROM movies;
+SELECT * FROM movies;
+SELECT * FROM movies WHERE Id=6;
+SELECT * FROM movies WHERE Year BETWEEN 2000 AND 2010;
+SELECT * FROM movies WHERE Year NOT BETWEEN 2000 AND 2010;
+SELECT title, year FROM movies WHERE year <= 2003;
+SELECT * FROM movies WHERE title LIKE "%Toy Story%";
+SELECT * FROM movies WHERE director = "John Lasseter";
+SELECT * FROM movies WHERE director != "John Lasseter";
+SELECT DISTINCT director FROM movies ORDER BY director ASC;
+SELECT title FROM movies ORDER BY year DESC LIMIT 4;
+SELECT title FROM movies ORDER BY title ASC LIMIT 5 OFFSET 6-10;
