@@ -7,44 +7,44 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class PurpleSteps3D {
 
-    static int WIDTH = 320;
-    static int HEIGHT = 343;
+	static int WIDTH = 320;
+	static int HEIGHT = 343;
 
-    public static void main(String[] args) {
-        JFrame jFrame = new JFrame("Drawing");
-        jFrame.setSize(new Dimension(WIDTH, HEIGHT));
-        jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        jFrame.add(new ImagePanel());
-        jFrame.setLocationRelativeTo(null);
-        jFrame.setVisible(true);
-    }
+	public static void main(String[] args) {
+		JFrame jFrame = new JFrame("Drawing");
+		jFrame.setSize(new Dimension(WIDTH, HEIGHT));
+		jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		jFrame.add(new ImagePanel());
+		jFrame.setLocationRelativeTo(null);
+		jFrame.setVisible(true);
+	}
 
-    static class ImagePanel extends JPanel {
-        @Override
-        protected void paintComponent(Graphics graphics) {
-            super.paintComponent(graphics);
-            mainDraw(graphics);
-        }
-    }
+	static class ImagePanel extends JPanel {
+		@Override
+		protected void paintComponent(Graphics graphics) {
+			super.paintComponent(graphics);
+			mainDraw(graphics);
+		}
+	}
 
-    public static void mainDraw(Graphics graphics) {
+	public static void mainDraw(Graphics graphics) {
 
 
-        graphics.setColor(new Color(177, 69, 243));
-        graphics.fillRect(0,0,15,15);
-        graphics.fillRect(15,15,25,25);
-        graphics.fillRect(40,40,35,35);
-        graphics.fillRect(75,75,45,45);
-        graphics.fillRect(120,120,55,55);
-        graphics.fillRect(175,175,70,70);
+		graphics.setColor(new Color(177, 69, 243));
+		graphics.fillRect(0, 0, 15, 15);
+		graphics.fillRect(15, 15, 25, 25);
+		graphics.fillRect(40, 40, 35, 35);
+		graphics.fillRect(75, 75, 45, 45);
+		graphics.fillRect(120, 120, 55, 55);
+		graphics.fillRect(175, 175, 70, 70);
 
-        graphics.setColor(Color.BLACK);
-        graphics.drawRect(0,0,15,15);
-        graphics.drawRect(15,15,25,25);
-        graphics.drawRect(40,40,35,35);
-        graphics.drawRect(75,75,45,45);
-        graphics.drawRect(120,120,55,55);
-        graphics.drawRect(175,175,70,70);
-    }
+		graphics.setColor(Color.BLACK);
+		graphics.drawRect(0, 0, 15, 15);
+		graphics.drawRect(15, 15, 25, 25);
+		graphics.drawRect(40, 40, 35, 35);
+		graphics.drawRect(75, 75, 45, 45);
+		graphics.drawRect(120, 120, 55, 55);
+		graphics.drawRect(175, 175, 70, 70);
+	}
 
 }
